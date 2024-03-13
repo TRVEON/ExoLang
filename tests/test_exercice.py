@@ -83,3 +83,17 @@ def test_sort(list, expected):
 
     #Assert
     assert result == expected
+
+@pytest.mark.parametrize("tab, expected",[
+    ([["a","b","c"],["d","e","f"]],"a;b;c\nd;e;f"),
+    ([["a","b","c"],["d","e","f"],["g","h","i"]],"a;b;c\nd;e;f\ng;h;i"),
+    ([["a","b","c","d"],["e","f","g","h"],["i","j","k","l"]],"a;b;c;d\ne;f;g;h\ni;j;k;l"),
+])
+def test_tab_to_csv(tab, expected):
+    #Arrange
+
+    #Act
+    result = tab_to_csv(tab)
+
+    #Assert
+    assert result == expected

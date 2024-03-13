@@ -21,3 +21,9 @@ def calcul_length(word):
 def sort (list):
     # Here you have to write the code that returns the list sorted in ascending order
     pass
+
+def tab_to_csv(tab):
+    # Here you have to write the code that returns the tab as a csv string
+    # To jump to the next line in a csv file, you have to use the "\n" character and don't forget the ; between each value
+    # Example input : [["a","b","c"],["d","e","f"],["g","h","i"]] output : "a;b;c\nd;e;f\ng;h;i"
+    pass
